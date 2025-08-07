@@ -1,0 +1,47 @@
+font-family: "Open Sans", sans-serif;
+font-family: "Paprika", system-ui;
+
+ <div class="py-[90px] bg-[url('./images/Whybg.png') bg-cover bg-center bg-no-repeat]">
+      <div class="max-w-[1170px] mx-auto flex justify-between">
+        <div class="w-1/2">
+        <div class="flex justify-between items-center py-[42px] pe-[146px] hover:py-[42px] ps-[28px] gap-3 hover:pe-[146px] hover:ps-[28px] hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300 pb-1">
+          <div>
+            <img src="./images/whyGup.png" alt="whyGup.png">
+          </div>
+          <div>
+            <p class="text-lg font-Paprika leading-[30px] font-semibold">We solve real-world problems through people and the web.</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center py-[42px] pe-[146px] hover:py-[42px] ps-[28px] gap-3 hover:pe-[146px] hover:ps-[28px] hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300 pb-1">
+          <div>
+            <img src="./images/whyGup.png" alt="whyGup.png">
+          </div>
+          <div>
+            <p class="text-lg font-Paprika leading-[30px] font-semibold">We solve real-world problems through people and the web.</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center py-[42px] pe-[146px] hover:py-[42px] ps-[28px] gap-3 hover:pe-[146px] hover:ps-[28px] hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300 pb-1">
+          <div>
+            <img src="./images/whyGup.png" alt="whyGup.png">
+          </div>
+          <div>
+            <p class="text-lg font-Paprika leading-[30px] font-semibold">We solve real-world problems through people and the web.</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center py-[42px] pe-[146px] hover:py-[42px] ps-[28px] gap-3 hover:pe-[146px] hover:ps-[28px] hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300 ">
+          <div>
+            <img src="./images/whyGup.png" alt="whyGup.png">
+          </div>
+          <div>
+            <p class="text-lg font-Paprika leading-[30px] font-semibold">We solve real-world problems through people and the web.</p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="w-1/2">
+        <h1 class="text-5xl font-bold font-[Open Sans] text-[#141135] pb-5">Why Choose Us</h1>
+        <p class="text-lg font-[Paprika] leading-[30px] italic pb-8 text-[#726E9E]">We are now a team of strategists, engineers, designers, and marketers who both use and develop technology for a variety of client needs.</p>
+        <button class="text-lg py-3 px-5 rounded-lg border border-[#1BBF00] font-semibold hover:bg-[#1BBF00] hover:text-white hover:duration-300"><a href="#">Contact Us</a></button>
+      </div>
+      </div>
+     </div>
