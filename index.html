@@ -1,217 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Innovate Project</title>
-    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
 
-     <!-- tailwindcss file link strat -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss file link strat -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwindcss file link end -->
-        
+
     <!-- css file link strat -->
-       <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- css file link end -->
 
-
     <!-- google font file link strat -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paprika&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- google font file link end -->
 
     <!-- fontawsome file link strat -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- fontawsome file link end -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- header part strat -->
-      <header class="fixed top-0 z-50 w-full bg-[rgba(22,12,109,0.50)] py-5 text-white">
-        <nav class="max-w-[85%] mx-auto flex items-center justify-between flex-wrap">
-          
-          <!-- Logo -->
-          <div class="w-[40%] sm:w-[30%] md:w-[20%]">
-            <img src="./images/Logo.png" alt="Logo.png" class="w-[120px] md:w-[100px]" />
-          </div>
+    <header
+      class="fixed top-0 z-50 w-full bg-[rgba(22,12,109,0.50)] py-5 text-white"
+    >
+      <nav
+        class="max-w-[85%] mx-auto flex items-center justify-between flex-wrap"
+      >
+        <!-- Logo -->
+        <div class="w-[40%] sm:w-[30%] md:w-[20%]">
+          <img
+            src="./images/Logo.png"
+            alt="Logo.png"
+            class="w-[120px] md:w-[100px]"
+          />
+        </div>
 
-          <!-- Mobile menu button -->
-          <div class="md:hidden block">
-            <button id="menu-toggle" class="text-white text-2xl focus:outline-none">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden block">
+          <button
+            id="menu-toggle"
+            class="text-white text-2xl focus:outline-none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
-          <!-- Nav Links -->
-      <div id="menu" class="w-full md:w-[60%] hidden md:flex md:items-center md:justify-center mt-4 md:mt-0 text-center">
-        <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-10 font-[Open Sans] text-lg font-semibold">
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              Home
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              About
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              Service
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              Portfolio
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              Price
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="group flex items-center justify-center hover:text-[#1BBF00]">
-              Blog
-              <i class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <!-- Nav Links -->
+        <div
+          id="menu"
+          class="w-full md:w-[60%] hidden md:flex md:items-center md:justify-center mt-4 md:mt-0 text-center"
+        >
+          <ul
+            class="flex flex-col md:flex-row items-center gap-4 md:gap-10 font-[Open Sans] text-lg font-semibold"
+          >
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                Home
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                About
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                Service
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                Portfolio
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                Price
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="group flex items-center justify-center hover:text-[#1BBF00]"
+              >
+                Blog
+                <i
+                  class="fa-solid fa-angle-down ml-1 hidden lg:inline group-hover:text-[#1BBF00]"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-
-          <!-- Contact Button -->
-          <div class="w-full md:w-[20%] mt-4 md:mt-0 text-center md:text-right hidden md:block">
-            <a href="#" class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] hover:duration-300">Contact Us</a>
-          </div>
-        </nav>
-      </header>
+        <!-- Contact Button -->
+        <div
+          class="w-full md:w-[20%] mt-4 md:mt-0 text-center md:text-right hidden md:block"
+        >
+          <a
+            href="#"
+            class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] hover:duration-300"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+    </header>
     <!-- header part end -->
 
     <!-- banner part strat -->
-     <section class="bg-[url('./images/banner.png')] bg-cover bg-center overflow-hidden">
-        <div class="bg-[rgba(106,98,197,0.9)] py-[130px] md:py-[150px] lg:py-[270px]">
-          <div class="max-w-[90%] md:max-w-[720px] lg:max-w-[960px] mx-auto text-white text-center relative">
-            <h1 class="font-bold text-3xl md:text-5xl lg:text-[70px] leading-tight md:leading-[70px] lg:leading-[100px]">
-              YOU’RE UNIQUE. YOUR WEBSITE SHOULD BE TOO
-            </h1>
-            <p class="font-[Paprika] italic text-base md:text-xl lg:text-3xl leading-relaxed md:leading-[32px] lg:leading-[40px] py-5">
-              A beautiful website passionately crafted for your small business. Our Digital Agency development has changed the way brands and businesses use technology for growing business.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="#" class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] transition duration-300">
-                Get Free Quoto
-              </a>
-              <a href="#" class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] transition duration-300">
-                Learn More
-              </a>
-            </div>
-
-            <!--  Responsive positioned image -->
-            <img
-              class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[130px] absolute -bottom-20 sm:-bottom-28 lg:-bottom-[220px] right-0 sm:-right-10 md:-right-24 lg:-right-[300px]"
-              src="./images/Group 1000006791.png"
-              alt="Group Image"
-            />
+    <section
+      class="bg-[url('./images/banner.png')] bg-cover bg-center overflow-hidden"
+    >
+      <div
+        class="bg-[rgba(106,98,197,0.9)] py-[130px] md:py-[150px] lg:py-[270px]"
+      >
+        <div
+          class="max-w-[90%] md:max-w-[720px] lg:max-w-[960px] mx-auto text-white text-center relative"
+        >
+          <h1
+            class="font-bold text-3xl md:text-5xl lg:text-[70px] leading-tight md:leading-[70px] lg:leading-[100px]"
+          >
+            YOU’RE UNIQUE. YOUR WEBSITE SHOULD BE TOO
+          </h1>
+          <p
+            class="font-[Paprika] italic text-base md:text-xl lg:text-3xl leading-relaxed md:leading-[32px] lg:leading-[40px] py-5"
+          >
+            A beautiful website passionately crafted for your small business.
+            Our Digital Agency development has changed the way brands and
+            businesses use technology for growing business.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <a
+              href="#"
+              class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] transition duration-300"
+            >
+              Get Free Quoto
+            </a>
+            <a
+              href="#"
+              class="inline-block text-lg text-white border border-[#1BBF00] font-semibold py-2 px-4 lg:py-3 lg:px-5 rounded-xl hover:bg-[#1BBF00] transition duration-300"
+            >
+              Learn More
+            </a>
           </div>
+
+          <!--  Responsive positioned image -->
+          <img
+            class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[130px] absolute -bottom-20 sm:-bottom-28 lg:-bottom-[220px] right-0 sm:-right-10 md:-right-24 lg:-right-[300px]"
+            src="./images/Group 1000006791.png"
+            alt="Group Image"
+          />
         </div>
-     </section>
+      </div>
+    </section>
     <!-- banner part end -->
 
     <!-- counter part strat-->
-     <section class="bg-[url('./images/counterBg.png')] bg-cover bg-center pb-[90px]">
+    <section
+      class="bg-[url('./images/counterBg.png')] bg-cover bg-center pb-[90px]"
+    >
       <div class="max-w-[1170px] mx-auto px-4">
-        
         <!-- counter images start -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
           <div>
-            <img src="./images/counter1.jpg" alt="counter1.jpg" class="w-full">
+            <img
+              src="./images/counter1.jpg"
+              alt="counter1.jpg"
+              class="w-full"
+            />
           </div>
           <div>
-            <img src="./images/counter2.jpg" alt="counter2.jpg" class="w-full">
+            <img
+              src="./images/counter2.jpg"
+              alt="counter2.jpg"
+              class="w-full"
+            />
           </div>
           <div>
-            <img src="./images/counter3.jpg" alt="counter3.jpg" class="w-full">
+            <img
+              src="./images/counter3.jpg"
+              alt="counter3.jpg"
+              class="w-full"
+            />
           </div>
           <div>
-            <img src="./images/counter4.jpg" alt="counter4.jpg" class="w-full">
+            <img
+              src="./images/counter4.jpg"
+              alt="counter4.jpg"
+              class="w-full"
+            />
           </div>
         </div>
         <!-- counter images end -->
 
         <!-- counter texts start -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-[50px] text-center">
-      <!-- Counter Box 1 -->
-      <div class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]">53K</h1>
-        <p class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]">Happy Client</p>
-      </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-[50px] text-center"
+        >
+          <!-- Counter Box 1 -->
+          <div
+            class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]"
+            >
+              53K
+            </h1>
+            <p
+              class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]"
+            >
+              Happy Client
+            </p>
+          </div>
 
-      <!-- Counter Box 2 -->
-      <div class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]">10K</h1>
-        <p class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]">Projects Done</p>
-      </div>
+          <!-- Counter Box 2 -->
+          <div
+            class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]"
+            >
+              10K
+            </h1>
+            <p
+              class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]"
+            >
+              Projects Done
+            </p>
+          </div>
 
-      <!-- Counter Box 3 -->
-      <div class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]">120K</h1>
-        <p class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]">Gets Award</p>
-      </div>
+          <!-- Counter Box 3 -->
+          <div
+            class="relative after:content-[''] after:absolute after:top-1/2 after:translate-y-[-50%] after:right-0 after:h-[80px] after:w-[2px] after:bg-[#4F585F] sm:after:block after:hidden md:after:block last:after:hidden"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]"
+            >
+              120K
+            </h1>
+            <p
+              class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]"
+            >
+              Gets Award
+            </p>
+          </div>
 
-      <!-- Counter Box 4 (no after border) -->
-      <div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]">16K</h1>
-        <p class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]">Operated Years</p>
-      </div>
-    </div>
+          <!-- Counter Box 4 (no after border) -->
+          <div>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1BBF00]"
+            >
+              16K
+            </h1>
+            <p
+              class="text-xl md:text-2xl lg:text-3xl font-bold pt-3 text-[#141135]"
+            >
+              Operated Years
+            </p>
+          </div>
+        </div>
 
         <!-- counter texts end -->
-
       </div>
-     </section>
+    </section>
     <!-- counter part end -->
 
     <!-- why part strat -->
-    <section class="py-[90px] bg-[url('./images/Whybg.png')] bg-cover bg-center bg-no-repeat">
-      <div class="max-w-[1140px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5">
-        
+    <section
+      class="py-[90px] bg-[url('./images/Whybg.png')] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="max-w-[1140px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5"
+      >
         <!-- Left Side (Boxes) -->
         <div class="w-full lg:w-1/2 grid gap-5">
           <!-- Box 1 -->
-          <div class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300">
-            <img src="./images/whyGup.png" alt="whyGup.png" class="w-12 h-12 object-contain">
+          <div
+            class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300"
+          >
+            <img
+              src="./images/whyGup.png"
+              alt="whyGup.png"
+              class="w-12 h-12 object-contain"
+            />
             <p class="text-lg font-Paprika leading-[30px] font-semibold">
               We solve real-world problems through people and the web.
             </p>
           </div>
           <!-- Box 2 -->
-          <div class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300">
-            <img src="./images/whyGup.png" alt="whyGup.png" class="w-12 h-12 object-contain">
+          <div
+            class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300"
+          >
+            <img
+              src="./images/whyGup.png"
+              alt="whyGup.png"
+              class="w-12 h-12 object-contain"
+            />
             <p class="text-lg font-Paprika leading-[30px] font-semibold">
               We solve real-world problems through people and the web.
             </p>
           </div>
           <!-- Box 3 -->
-          <div class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300">
-            <img src="./images/whyGup.png" alt="whyGup.png" class="w-12 h-12 object-contain">
+          <div
+            class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300"
+          >
+            <img
+              src="./images/whyGup.png"
+              alt="whyGup.png"
+              class="w-12 h-12 object-contain"
+            />
             <p class="text-lg font-Paprika leading-[30px] font-semibold">
               We solve real-world problems through people and the web.
             </p>
           </div>
           <!-- Box 4 -->
-          <div class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300">
-            <img src="./images/whyGup.png" alt="whyGup.png" class="w-12 h-12 object-contain">
+          <div
+            class="flex items-center gap-3 py-5 px-7 hover:bg-white hover:shadow-lg hover:rounded-lg hover:duration-300"
+          >
+            <img
+              src="./images/whyGup.png"
+              alt="whyGup.png"
+              class="w-12 h-12 object-contain"
+            />
             <p class="text-lg font-Paprika leading-[30px] font-semibold">
               We solve real-world problems through people and the web.
             </p>
@@ -220,13 +389,21 @@
 
         <!-- Right Side (Text + Button) -->
         <div class="w-full lg:w-1/2">
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Open Sans] text-[#141135] pb-5">
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Open Sans] text-[#141135] pb-5"
+          >
             Why Choose Us
           </h1>
-          <p class="text-base sm:text-lg font-[Paprika] leading-[30px] italic pb-8 text-[#726E9E]">
-            We are now a team of strategists, engineers, designers, and marketers who both use and develop technology for a variety of client needs.
+          <p
+            class="text-base sm:text-lg font-[Paprika] leading-[30px] italic pb-8 text-[#726E9E]"
+          >
+            We are now a team of strategists, engineers, designers, and
+            marketers who both use and develop technology for a variety of
+            client needs.
           </p>
-          <button class="text-lg py-3 px-5 rounded-lg border border-[#1BBF00] font-semibold hover:bg-[#1BBF00] hover:text-white hover:duration-300">
+          <button
+            class="text-lg py-3 px-5 rounded-lg border border-[#1BBF00] font-semibold hover:bg-[#1BBF00] hover:text-white hover:duration-300"
+          >
             <a href="#">Contact Us</a>
           </button>
         </div>
@@ -235,148 +412,242 @@
     <!-- why part end -->
 
     <!-- what part strat -->
-     <section class="py-[90px] bg-[#F6F5FF]">
+    <section class="py-[90px] bg-[#F6F5FF]">
       <div class="max-w-[1170px] mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="">
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Open Sans] text-[#141135] pb-5">
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold font-[Open Sans] text-[#141135] pb-5"
+            >
               What We Do
             </h1>
-            <p class="text-base sm:text-lg font-[Paprika] leading-[30px] italic pb-8 text-[#726E9E]">
-              We are now a team of strategists, engineers, designers, and marketers who both use and develop technology 
+            <p
+              class="text-base sm:text-lg font-[Paprika] leading-[30px] italic pb-8 text-[#726E9E]"
+            >
+              We are now a team of strategists, engineers, designers, and
+              marketers who both use and develop technology
             </p>
-            <button class="text-lg py-3 px-5 rounded-lg border border-[#1BBF00] font-semibold hover:bg-[#1BBF00] hover:text-white hover:duration-300">
-            <a href="#">Contact Us</a>
-          </button>
-        </div>
-        <div class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]">
-          <img class="w-[64px] inline-block" src="./images/web-design 1.png" alt="web-design 1.png">
-          
-          <h1 class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white">
-            Web Design & Dev
-          </h1>
+            <button
+              class="text-lg py-3 px-5 rounded-lg border border-[#1BBF00] font-semibold hover:bg-[#1BBF00] hover:text-white hover:duration-300"
+            >
+              <a href="#">Contact Us</a>
+            </button>
+          </div>
+          <div
+            class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <img
+              class="w-[64px] inline-block"
+              src="./images/web-design 1.png"
+              alt="web-design 1.png"
+            />
 
-          <p class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white">
-            Social Media has changed the way we interact & do business while creating
-          </p>
+            <h1
+              class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white"
+            >
+              Web Design & Dev
+            </h1>
 
-          <a class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white 
-            after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full 
-            after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]" href="#">
-            Read more
-          </a>
-        </div>
-        <div class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]">
-          <img class="w-[64px] inline-block" src="./images/web-design 1.png" alt="web-design 1.png">
-          
-          <h1 class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white">
-           Software Dev 
-          </h1>
+            <p
+              class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white"
+            >
+              Social Media has changed the way we interact & do business while
+              creating
+            </p>
 
-          <p class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white">
-            Content Marketing is the other fold of online advertisement. If you are looking to build
-          </p>
+            <a
+              class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+          <div
+            class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <img
+              class="w-[64px] inline-block"
+              src="./images/web-design 1.png"
+              alt="web-design 1.png"
+            />
 
-          <a class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white 
-            after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full 
-            after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]" href="#">
-            Read more
-          </a>
-        </div>
-        <div class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]">
-          <img class="w-[64px] inline-block" src="./images/web-design 1.png" alt="web-design 1.png">
-          
-          <h1 class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white">
-           Content Writing
-          </h1>
+            <h1
+              class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white"
+            >
+              Software Dev
+            </h1>
 
-          <p class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white">
-            Social Media has changed the way we interact & do business while creating a new avenue.
-          </p>
+            <p
+              class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white"
+            >
+              Content Marketing is the other fold of online advertisement. If
+              you are looking to build
+            </p>
 
-          <a class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white 
-            after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full 
-            after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]" href="#">
-            Read more
-          </a>
-        </div>
-        <div class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]">
-          <img class="w-[64px] inline-block" src="./images/web-design 1.png" alt="web-design 1.png">
-          
-          <h1 class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white">
-           Digital Marketing
-          </h1>
+            <a
+              class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+          <div
+            class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <img
+              class="w-[64px] inline-block"
+              src="./images/web-design 1.png"
+              alt="web-design 1.png"
+            />
 
-          <p class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white">
-            Social Media has changed the way we interact & do business while creating a new avenue.
-          </p>
+            <h1
+              class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white"
+            >
+              Content Writing
+            </h1>
 
-          <a class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white 
-            after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full 
-            after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]" href="#">
-            Read more
-          </a>
-        </div>
-        <div class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]">
-          <img class="w-[64px] inline-block" src="./images/web-design 1.png" alt="web-design 1.png">
-          
-          <h1 class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white">
-            Support & Training
-          </h1>
+            <p
+              class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white"
+            >
+              Social Media has changed the way we interact & do business while
+              creating a new avenue.
+            </p>
 
-          <p class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white">
-            Content Marketing is the other fold of online advertisement. If you are looking to build
-          </p>
+            <a
+              class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+          <div
+            class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <img
+              class="w-[64px] inline-block"
+              src="./images/web-design 1.png"
+              alt="web-design 1.png"
+            />
 
-          <a class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white 
-            after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full 
-            after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]" href="#">
-            Read more
-          </a>
-        </div>
+            <h1
+              class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white"
+            >
+              Digital Marketing
+            </h1>
 
+            <p
+              class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white"
+            >
+              Social Media has changed the way we interact & do business while
+              creating a new avenue.
+            </p>
+
+            <a
+              class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+          <div
+            class="p-12 text-center bg-white rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <img
+              class="w-[64px] inline-block"
+              src="./images/web-design 1.png"
+              alt="web-design 1.png"
+            />
+
+            <h1
+              class="text-3xl font-bold text-[Open Sans] pt-8 pb-3 text-[#141135] group-hover:text-white"
+            >
+              Support & Training
+            </h1>
+
+            <p
+              class="text-lg font-[Paprika] leading-[20px] italic text-[#726E9E] pb-4 group-hover:text-white"
+            >
+              Content Marketing is the other fold of online advertisement. If
+              you are looking to build
+            </p>
+
+            <a
+              class="inline-block text-xl font-bold font-sans text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[30px] after:h-[30px] after:bg-[#1BBF00] after:rounded-r-full after:top-0 after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- what part end -->
 
     <!-- impact part strat -->
-    <section class="py-[80px] md:py-[130px] bg-[url('./images/impactbg.png')] bg-cover bg-center bg-no-repeat">
+    <section
+      class="py-[80px] md:py-[130px] bg-[url('./images/impactbg.png')] bg-cover bg-center bg-no-repeat"
+    >
       <div class="max-w-[1080px] mx-auto px-4">
         <!-- Header Text -->
         <div class="text-center">
-          <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl font-[Open Sans] text-[#141135]">
+          <h1
+            class="font-bold text-3xl sm:text-4xl md:text-5xl font-[Open Sans] text-[#141135]"
+          >
             We create real impact
           </h1>
-          <p class="text-base sm:text-lg md:text-xl font-[Paprika] leading-relaxed italic pt-6 pb-14 md:px-20 text-[#726E9E]">
-            We design, build and support websites and apps for clients worldwide. Create beautiful, eye-catching on-page messages without the need for a developer.
+          <p
+            class="text-base sm:text-lg md:text-xl font-[Paprika] leading-relaxed italic pt-6 pb-14 md:px-20 text-[#726E9E]"
+          >
+            We design, build and support websites and apps for clients
+            worldwide. Create beautiful, eye-catching on-page messages without
+            the need for a developer.
           </p>
         </div>
 
         <!-- Content Grid -->
-        <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 pb-[80px] lg:pb-[130px]">
+        <div
+          class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 pb-[80px] lg:pb-[130px]"
+        >
           <!-- Left Column -->
           <div class="w-full lg:w-1/2">
             <div class="flex gap-4 mb-8">
-              <img src="./images/icon.png" alt="icon" class="w-14 h-14 flex-shrink-0">
+              <img
+                src="./images/icon.png"
+                alt="icon"
+                class="w-14 h-14 flex-shrink-0"
+              />
               <div>
-                <h2 class="font-bold text-2xl md:text-3xl font-[Open Sans] text-[#141135]">
+                <h2
+                  class="font-bold text-2xl md:text-3xl font-[Open Sans] text-[#141135]"
+                >
                   Competitive analysis
                 </h2>
-                <p class="text-base md:text-lg font-[Paprika] italic leading-relaxed text-[#726E9E] pt-3">
-                  With an all-new look and powerful features, Ekko is the best way to ensure success for your business.
+                <p
+                  class="text-base md:text-lg font-[Paprika] italic leading-relaxed text-[#726E9E] pt-3"
+                >
+                  With an all-new look and powerful features, Ekko is the best
+                  way to ensure success for your business.
                 </p>
               </div>
             </div>
 
             <div class="flex gap-4 mb-8">
-              <img src="./images/icon (1).png" alt="icon" class="w-14 h-14 flex-shrink-0">
+              <img
+                src="./images/icon (1).png"
+                alt="icon"
+                class="w-14 h-14 flex-shrink-0"
+              />
               <div>
-                <h2 class="font-bold text-2xl md:text-3xl font-[Open Sans] text-[#141135]">
+                <h2
+                  class="font-bold text-2xl md:text-3xl font-[Open Sans] text-[#141135]"
+                >
                   Strategy and research
                 </h2>
-                <p class="text-base md:text-lg font-[Paprika] italic leading-relaxed text-[#726E9E] pt-3">
-                  With an all-new look and powerful features, Ekko is the best way to ensure success for your business.
+                <p
+                  class="text-base md:text-lg font-[Paprika] italic leading-relaxed text-[#726E9E] pt-3"
+                >
+                  With an all-new look and powerful features, Ekko is the best
+                  way to ensure success for your business.
                 </p>
               </div>
             </div>
@@ -384,13 +655,29 @@
 
           <!-- Right Column (Images) -->
           <div class="w-full lg:w-1/2 relative min-h-[400px]">
-            <img class="absolute w-[180px] sm:w-[230px] h-[200px] sm:h-[273px] top-0 left-0 rounded-xl" src="./images/impact1.jpg" alt="impact1">
+            <img
+              class="absolute w-[180px] sm:w-[230px] h-[200px] sm:h-[273px] top-0 left-0 rounded-xl"
+              src="./images/impact1.jpg"
+              alt="impact1"
+            />
 
-            <img class="absolute w-[220px] sm:w-[310px] h-[190px] sm:h-[263px] top-40 sm:top-44 left-28 sm:left-48 rounded-xl" src="./images/impact2.jpg" alt="impact2">
+            <img
+              class="absolute w-[220px] sm:w-[310px] h-[190px] sm:h-[263px] top-40 sm:top-44 left-28 sm:left-48 rounded-xl"
+              src="./images/impact2.jpg"
+              alt="impact2"
+            />
 
-            <img class="absolute w-[140px] sm:w-[160px] h-[120px] sm:h-[140px] -top-1 left-44 sm:left-64 rounded-xl" src="./images/impact3.jpg" alt="impact3">
+            <img
+              class="absolute w-[140px] sm:w-[160px] h-[120px] sm:h-[140px] -top-1 left-44 sm:left-64 rounded-xl"
+              src="./images/impact3.jpg"
+              alt="impact3"
+            />
 
-            <img class="absolute w-[100px] sm:w-[130px] h-[90px] sm:h-[105px] top-28 sm:top-20 left-64 sm:left-96 rounded-xl" src="./images/impactIcn.png" alt="impact4">
+            <img
+              class="absolute w-[100px] sm:w-[130px] h-[90px] sm:h-[105px] top-28 sm:top-20 left-64 sm:left-96 rounded-xl"
+              src="./images/impactIcn.png"
+              alt="impact4"
+            />
           </div>
         </div>
       </div>
@@ -398,45 +685,296 @@
     <!-- impact part end -->
 
     <!-- plan part strat -->
-     <section class="py-[110px] bg-[#F9F9FB]">
+    <section class="py-[110px] bg-[#F9F9FB]">
       <div class="max-w-[1170px] mx-auto">
-        <h1 class="text-4xl md:text-5xl xl:text-7xl font-bold text-[Open Sans] pb-[80px] text-center text-[#141135]">Choose The Right Plan</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 text-center">
-          <div class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]">
-            <h2 class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white">Basic</h2>
-            <img class="inline-block group-hover:bg-[#6B62C5]" src="./images/plan1.png" alt="plan1.png">
-            <h2 class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"><sup>$</sup>160</h2>
-            <p class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"> Responsive DesignDynamic Elements Service Pages Custom Design & Features</p>
+        <h1
+          class="text-4xl md:text-5xl xl:text-7xl font-bold text-[Open Sans] pb-[80px] text-center text-[#141135]"
+        >
+          Choose The Right Plan
+        </h1>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 text-center"
+        >
+          <div
+            class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <h2
+              class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white"
+            >
+              Basic
+            </h2>
+            <img
+              class="inline-block group-hover:bg-[#6B62C5]"
+              src="./images/plan1.png"
+              alt="plan1.png"
+            />
+            <h2
+              class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"
+            >
+              <sup>$</sup>160
+            </h2>
+            <p
+              class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"
+            >
+              Responsive DesignDynamic Elements Service Pages Custom Design &
+              Features
+            </p>
           </div>
-          <div class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]">
-            <h2 class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white">Professional</h2>
-            <img class="inline-block group-hover:bg-[#6B62C5]" src="./images/plan2.png" alt="plan2.png">
-            <h2 class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"><sup>$</sup>240</h2>
-            <p class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"> R Responsive Design Dynamic ElementsService Pages Custom Design & Features</p>
+          <div
+            class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <h2
+              class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white"
+            >
+              Professional
+            </h2>
+            <img
+              class="inline-block group-hover:bg-[#6B62C5]"
+              src="./images/plan2.png"
+              alt="plan2.png"
+            />
+            <h2
+              class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"
+            >
+              <sup>$</sup>240
+            </h2>
+            <p
+              class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"
+            >
+              R Responsive Design Dynamic ElementsService Pages Custom Design &
+              Features
+            </p>
           </div>
-          <div class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]">
-            <h2 class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white">Basic</h2>
-            <img class="inline-block group-hover:bg-[#6B62C5]" src="./images/plan1.png" alt="plan1.png">
-            <h2 class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"><sup>$</sup>160</h2>
-            <p class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"> Responsive DesignDynamic Elements Service Pages Custom Design & Features</p>
+          <div
+            class="py-[55px] bg-white shadow-xl rounded-xl group hover:bg-[#6B62C5]"
+          >
+            <h2
+              class="text-3xl font-bold text-[Open Sans] text-[#141135] pb-[20px] group-hover:text-white"
+            >
+              Basic
+            </h2>
+            <img
+              class="inline-block group-hover:bg-[#6B62C5]"
+              src="./images/plan1.png"
+              alt="plan1.png"
+            />
+            <h2
+              class="text-7xl font-extrabold text-[Open Sans] text-[#1BBF00] py-5"
+            >
+              <sup>$</sup>160
+            </h2>
+            <p
+              class="text-xl leading[20px] text-[#726E9E] px-8 italic group-hover:text-white"
+            >
+              Responsive DesignDynamic Elements Service Pages Custom Design &
+              Features
+            </p>
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- plan part end -->
 
-    <!-- header part strat -->
-    <!-- header part end -->
-    <!-- header part strat -->
-    <!-- header part end -->
-    <!-- header part strat -->
-    <!-- header part end -->
-    <!-- header part strat -->
-    <!-- header part end -->
+    <!-- about part start -->
+    <section class="py-[100px] bg-[#F8F8FF]">
+      <div class="max-w-[1400px] mx-auto px-4">
+        <h1
+          class="text-2xl md:text-4xl lg:text-5xl font-bold pb-[130px] text-center text-[#141135] font-openSans"
+        >
+          What The People Thinks About Us
+        </h1>
 
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-7"
+        >
+          <!-- Left Icon -->
+          <div class="mb-7 md:mb-0">
+            <img
+              class="w-[64px]"
+              src="./images/abouticon1.png"
+              alt="abouticon1.png"
+            />
+          </div>
+
+          <!-- Testimonial Card -->
+          <div
+            class="text-center bg-white rounded-xl shadow-xl p-6 relative max-w-[800px]"
+          >
+            <img
+              class="w-[145px] absolute -top-14 left-1/2 -translate-x-1/2"
+              src="./images/about.png"
+              alt="about.png"
+            />
+
+            <div class="text-[#FF7628] mt-[70px]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p
+              class="mt-4 text-lg md:text-2xl leading-relaxed text-[#726E9E] italic px-4 md:px-16"
+            >
+              Lesser Replenish bearing they’re him cattle kind dominion. You
+              which fill place. Land she’d subdue divided gathering blessed
+              seasons it. Without, wherein days.
+            </p>
+
+            <h2 class="mt-6 font-bold text-2xl text-[#221A2C]">Lukan Depina</h2>
+            <p class="text-sm text-[#726E9E]">CEO And Head Of Idea</p>
+          </div>
+
+          <!-- Right Icon -->
+          <div>
+            <img
+              class="w-[64px]"
+              src="./images/abouticon2.png"
+              alt="abouticon2.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about part end -->
+
+    <!-- like part start -->
+    <section class="py-[100px] bg-[url('./images/likebg.png')] bg-cover bg-no-repeat bg-center">
+      <div class="max-w-[980px] mx-auto px-4">
+        <h1 class="text-5xl font-bold text-[#030314] font-openSans pb-[65px]">
+          You May Also Like
+        </h1>
+        <div class="flex flex-col md:flex-row items-center gap-20 mb-[60px]">
+          <div>
+            <img class="rounded-xl" src="./images/like1.jpg" alt="like1.jpg" />
+          </div>
+          <div>
+            <h5 class="pb-8 text-sm font-bold font-[Quicksand]">
+              <span class="text-sm text-[#1BBF00] font-bold font-[Quicksand]"
+                >Name</span
+              >
+              By Tomas Nikelson Posted 5 Hours Ago
+            </h5>
+            <p
+              class="font-bold text-3xl leading-10 text-#[141135] font-[Open Sans] pb-8"
+            >
+              Punto Pago Allows Quick And Secure Payments For Services In Panama
+            </p>
+            <a
+              class="inline-block text-lg font-bold font-[Open Sans] text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[20px] after:h-[20px] after:bg-[#1BBF00] after:rounded-r-full after:top-[6px] after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-20 mb-[60px]">
+          <div>
+            <img class="rounded-xl w-[320px]" src="./images/like2.jpg" alt="like2.jpg" />
+          </div>
+          <div>
+            <h5 class="pb-8 text-sm font-bold font-[Quicksand]">
+              <span class="text-sm text-[#1BBF00] font-bold font-[Quicksand]"
+                >Name</span
+              >
+              By Tomas Nikelson Posted 5 Hours Ago
+            </h5>
+            <p
+              class="font-bold text-3xl leading-10 text-#[141135] font-[Open Sans] pb-8"
+            >
+              The User Can Also Replenish A Balance Make Remittances
+            </p>
+            <a
+              class="inline-block text-lg font-bold font-[Open Sans] text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[20px] after:h-[20px] after:bg-[#1BBF00] after:rounded-r-full after:top-[6px] after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-20">
+          <div>
+            <img class="rounded-xl w-[320px]" src="./images/like3.jpg" alt="like3.jpg" />
+          </div>
+          <div>
+            <h5 class="pb-8 text-sm font-bold font-[Quicksand]">
+              <span class="text-sm text-[#1BBF00] font-bold font-[Quicksand]"
+                >Name</span
+              >
+              By Tomas Nikelson Posted 5 Hours Ago
+            </h5>
+            <p
+              class="font-bold text-3xl leading-10 text-#[141135] font-[Open Sans] pb-8"
+            >
+              The User Can Also Replenish A Balance Make Remittances
+            </p>
+            <a
+              class="inline-block text-lg font-bold font-[Open Sans] text-[#141135] relative z-10 group-hover:text-white after:content-[''] after:absolute after:w-[20px] after:h-[20px] after:bg-[#1BBF00] after:rounded-r-full after:top-[6px] after:right-[-10px] after:-z-10 group-hover:after:bg-[rgba(255,255,255,0.3)]"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- like part end -->
+
+    <!-- footer part strat -->
+    <footer class="py-[135px] bg-[#48409C] text-white">
+  <div class="max-w-[1170px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <!-- Logo & Description -->
+    <div>
+      <img class="w-[135px] pb-6" src="./images/Logo.png" alt="Logo">
+      <p class="text-sm leading-relaxed opacity-80">
+        Install any demo or template with a single click. You can mix and match all the demos & templates. Every demo can be turned into one or multi-page.
+      </p>
+    </div>
+
+    <!-- Features -->
+    <div>
+      <h2 class="text-lg font-semibold mb-4">Features</h2>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li><a href="#" class="hover:text-gray-200 transition">Home</a></li>
+        <li><a href="#" class="hover:text-gray-200 transition">About</a></li>
+        <li><a href="#" class="hover:text-gray-200 transition">Benefit</a></li>
+        <li><a href="#" class="hover:text-gray-200 transition">Pricing</a></li>
+        <li><a href="#" class="hover:text-gray-200 transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div>
+      <h2 class="text-lg font-semibold mb-4">Products</h2>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li>Task Management</li>
+        <li>Company growth</li>
+        <li>Time tracking</li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h2 class="text-lg font-semibold mb-4">Support</h2>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li>Customer service</li>
+        <li>Accessibility</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+    <!-- footer part end -->
+
+    <!-- header part strat -->
+    <!-- header part end -->
 
     <!-- js file link strat -->
-     <script src="./index.js"></script>
+    <script src="./index.js"></script>
     <!-- js file link end -->
-</body>
+  </body>
 </html>
